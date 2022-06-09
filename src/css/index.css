@@ -43,6 +43,18 @@
   display: none;
   position: absolute;
 }
+.nav .hamburger-menu::after {
+  content: "";
+  position: absolute;
+  border-width: 2.5em;
+  border-style: solid;
+  bottom: 90%;
+  right: 0;
+  border-top-color: transparent;
+  border-right-color: hsl(0deg, 0%, 100%);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
 .nav .hamburger-menu .nav-links {
   display: flex;
   flex-direction: column;
@@ -78,6 +90,7 @@
 @media only screen and (max-width: 600px) {
   .nav .nav-container .icon-Hamburger {
     display: block;
+    cursor: pointer;
   }
   .nav .nav-container .desktop-menu {
     display: none;
