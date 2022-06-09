@@ -1,0 +1,104 @@
+@import './colors';
+@import './fonts';
+.nav {
+    position: relative;
+    .nav-container {
+        //border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon-Hamburger {
+            display: none;
+        }
+
+        .desktop-menu{
+            .nav-links {
+                display: flex;
+                list-style: none;
+                gap: 25px;
+                color: $White;
+                font-family: $Barlow;
+
+                .nav-link {
+                    padding: 10px 15px;
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.488);
+                        border-radius: 20px;
+                        cursor: pointer;
+                    }
+                }
+
+                .contact{
+                    text-transform: uppercase;
+                    font-family: $Fraunces;
+                    color: $Verydarkdesaturatedblue;
+                    background-color: $White;
+                    border-radius: 20px;
+                    &:hover {
+                        color: $White;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .hamburger-menu {
+        margin-top: 5em;
+        width: 100%;
+        background-color: $White;
+        display: none;
+        position: absolute;
+        .nav-links{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5em;
+            list-style: none;
+            color: $Darkgrayishblue;
+            font-family: $Barlow;
+            .nav-link{
+                padding: 15px 18px;
+                margin: 30px 0px;
+                &:hover {
+                    background-color: $Yellow;
+                    border-radius: 20px;
+                    color: $Verydarkdesaturatedblue;
+                    cursor: pointer;
+                }
+            }
+            .contact{
+                color: $Verydarkdesaturatedblue;
+                background-color: $Yellow;
+                border-radius: 20px;
+                font-weight: 900;
+                font-family: $Fraunces;
+                text-transform: uppercase;
+                &:hover {
+                    color: $White;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        .nav-container {
+            .icon-Hamburger {
+                display: block;
+            }
+            .desktop-menu{
+                display: none;
+            }
+        }
+        .hamburger-menu {
+            display: block;
+        }
+    }
+  
+}
+

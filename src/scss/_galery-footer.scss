@@ -1,0 +1,23 @@
+.footer-galery-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    .img-footer{
+        width: 100%;
+        height: 100%;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .footer-galery-container{
+        grid-template-columns: repeat(2, 1fr);
+        .mobile{
+            display: block;
+        }
+        .desktop{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.footer-container{
+    padding: 5em;
+    text-align: center;
+    background-color: $Darkmoderatecyan;
+
+    .footer-links, .social-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .footer-links{
+      gap: 2em;
+      padding-top: 1em;
+      padding-bottom: 2.5em;
+      color: $Darkdesaturatedcyan;
+      font-family: $Barlow;
+    }
+
+    .social-links{
+        gap: 1em;
+    }
+
+    .attribution{
+        margin-top: 2em;
+        color: $Darkdesaturatedcyan;
+        a{
+            color: $Verydarkdesaturatedblue;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
+}

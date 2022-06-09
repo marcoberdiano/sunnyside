@@ -1,0 +1,25 @@
+.app-header {
+    padding: 1em;
+    background-image: url('../images/desktop/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+
+    .hero-container{
+        margin-top: 6em;
+        text-align: center;
+        .title{
+            font-size: 6em;
+            color: $White;
+            text-transform: uppercase;
+            font-family: $Fraunces;
+            font-weight: 900;
+            letter-spacing: 12px;
+        }
+        .arrow{
+            margin-top: 5em;
+        }
+    }
+    
+}

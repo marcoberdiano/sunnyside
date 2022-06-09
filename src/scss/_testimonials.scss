@@ -1,0 +1,58 @@
+.testimonials-container {
+    
+    text-align: center;
+    padding: 10em 5em;
+
+    .title{
+        margin-bottom: 2em;
+        font-family: $Fraunces;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $Darkgrayishblue;
+    }
+
+    .testimonials-cards{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .card-container{
+            padding: 0em 2em;
+            .card-img{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            .card-comment{
+                margin: 3em 0px;
+                font-family: $Barlow;
+                color: $Verydarkgrayishblue;
+            }
+            .card-name{
+                font-family: $Fraunces;
+                font-weight: 900;
+                font-size: 1.4em;
+            }
+            .card-cargo{
+                font-family: $Barlow;
+                color: $Grayishblue;
+                font-size: 0.9em;
+                padding: 1em 0em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .testimonials-container {
+        padding: 10em 1em;
+        .testimonials-cards{
+            flex-direction: column;
+            .card-container{
+                padding: 0em 1em;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import './navbar';
+@import './app-header';
+@import './app-main';
+@import './app-footer';
+
+.app {}
+
+@media only screen and (max-width: 890px) {
+    .app {
+        .app-header {
+            background-image: url('../images/mobile/image-header.jpg');
+            .hero-container{
+                margin-top: 5em;
+                .title{
+                    font-size: 3em;
+                }
+                .arrow{
+                    margin-top: 14em;
+                }
+            }
+        }
+    }
+}

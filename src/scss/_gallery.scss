@@ -1,0 +1,92 @@
+.galery-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .card-container{
+        padding: 0em 4em;
+        display: flex;
+        align-items:flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+        .card-title{
+            font-size: 3em;
+            font-family: $Fraunces;
+            color: $Verydarkdesaturatedblue;
+        }
+        .card-desc{
+            font-size: 1.2em;
+            font-family: $Barlow;
+            color: $Darkgrayishblue;
+        }
+    }
+
+    .card2-container {
+        .card-img {
+            width: 100%;
+            height: 100%;
+        }
+        .mobile{
+            display: none;
+        }
+    }
+
+    .card3-container {
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 45em;
+        background-position: bottom;
+        display: flex;
+        gap: 3em;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding:4em;
+        .card-img {
+            width: 100%;
+            height: 100%;
+        }
+        .card3-title{
+            font-family: $Fraunces;
+            color: $Verydarkdesaturatedblue;
+            font-size: 2em;
+        }
+        .card3-desc{
+            font-size: 1.2em;
+            font-family: $Barlow;
+            color: $Darkgrayishblue;
+        } 
+    }
+
+}
+
+@media only screen and (max-width: 890px) {
+   
+    .galery-container{
+        grid-template-columns: 1fr;
+        .card-container{
+            text-align: center;
+            align-items:center;
+            padding: 4em;
+            .card-title{
+                font-size: 2.5em;
+            }
+        }
+        .card2-container {
+            .mobile{
+                display: block;
+            }
+            .desktop{
+                display: none;
+            }
+        }
+        .item1{
+            grid-area: 2 / 1 / 3 / 1;
+        }
+        .item2{
+            grid-area: 1 / 1 / 2 / 1;
+        }
+    }
+    
+}
